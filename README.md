@@ -18,9 +18,16 @@ build/index.html shows the latest version that is ready for inclusion into the s
 
 
 
-Building:
+## Building:
+
 Clone or download the repository or otherwise get it into a folder.
+
 run `npm install react react-dom next` to install the dependencies
+
 run `npx next build` to build it
+
 run `npx next export -o ./build/` to output to the build directory
-manually remove the script files from the export, and then add in the line `<script src="logic.js" type="module"></script>` at the start of <body> to connect it to @rodg's logic
+
+manually remove the script files from the export
+
+then add in the line `<script src="logic.js" type="module"></script>` at the start of <body> to connect it to @rodg's logic
