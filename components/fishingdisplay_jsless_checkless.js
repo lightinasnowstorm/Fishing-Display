@@ -60,8 +60,8 @@ class FishingDisplayJSLessCheckless extends React.Component {
         var fish = Object.entries(this.state.fishies)
 
         //size constants- move to props?
-        const fishBoxHeight = 700
-        const fishBoxWidth = 216
+        const fishBoxHeight = 280
+        const fishBoxWidth = 700
         const fishSize = 50
         const fishPadding = 2
 
