@@ -75,13 +75,13 @@ class FishingDisplayJSLessCheckless extends React.Component {
             <div className="fishBox" id="fishBox">
                 {
                     fish.map(([n, fished]) => (
-                        <div className="fish" id={n} key={n} >
+                        <div className="fish blue red" id={n} key={n} >
                             <img className="fishImg" src={`./images/${n}.png`} />
                         </div>
                     ))
                 }
             </div>
-            <style>
+            <style jsx>
                 {`
                 .fishBox{
                     display: flex;
@@ -113,7 +113,7 @@ class FishingDisplayJSLessCheckless extends React.Component {
                     border-radius:100%;
                     overflow:hidden;
                     clip-path: polygon(50% 0%, 93.03% 23.14%, 93.88% 75%, 50% 100%, 7.41% 78.7%, 7.41% 25%);
-                    mask: radial-gradient(black 67%, transparent 69%);
+                    mask: radial-gradient(white 67%, transparent 69%);
                 }
                     
                 .red{
