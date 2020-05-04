@@ -15,3 +15,12 @@ After that, it was decided that one component would be used to track the state o
 The entire time, I leveraged features of nextjs and react, such as stylex jsx for styles that work in multiple places, or variables to easily change how things looked, to even enabling the list of fish to be editable on the fly.
 
 build/index.html shows the latest version that is ready for inclusion into the stream layout.
+
+
+
+Building:
+Clone or download the repository or otherwise get it into a folder.
+run `npm install react react-dom next` to install the dependencies
+run `npx next build` to build it
+run `npx next export -o ./build/` to output to the build directory
+manually remove the script files from the export, and then add in the line `<script src="logic.js" type="module"></script>` at the start of <body> to connect it to @rodg's logic
