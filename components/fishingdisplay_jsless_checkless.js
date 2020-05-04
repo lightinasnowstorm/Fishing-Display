@@ -75,7 +75,7 @@ class FishingDisplayJSLessCheckless extends React.Component {
             <div className="fishBox" id="fishBox">
                 {
                     fish.map(([n, fished]) => (
-                        <div className="fish blue red" id={n} key={n} >
+                        <div className="fish" id={n} key={n} >
                             <img className="fishImg" src={`./images/${n}.png`} />
                         </div>
                     ))
