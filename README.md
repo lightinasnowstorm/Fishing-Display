@@ -13,3 +13,5 @@ After that, because the component could not be integrated as native react code, 
 After that, it was decided that one component would be used to track the state of how two seperate teams had caught the fish. Therefore, I had to change the design of the component and classes to support having multiple teams, incorporating feedback on visuals and testing how it looked in multiple environments.
 
 The entire time, I leveraged features of nextjs and react, such as stylex jsx for styles that work in multiple places, or variables to easily change how things looked, to even enabling the list of fish to be editable on the fly.
+
+index.html shows the latest version that is ready for inclusion into the stream layout.
