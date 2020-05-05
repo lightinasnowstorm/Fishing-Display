@@ -65,18 +65,20 @@ class FishingDisplayJSLessCheckless extends React.Component {
         const fishSize = 50
         const fishPadding = 2
 
-        const redcolor='#ff4646'//'#ff8e22'
-        const bluecolor='#0074d2'//'#903bff'
-        const tilt="147.75deg"
+        const redcolor = '#ff4646'//'#ff8e22'
+        const bluecolor = '#0074d2'//'#903bff'
+        const tilt = "147.75deg"
 
 
         return (<div>
 
             <div className="fishBox" id="fishBox">
                 {
-                    fish.map(([n, fished]) => (
-                        <div className="fish" id={n} key={n} >
-                            <img className="fishImg" src={`./images/${n}.png`} />
+                    fish.map(([fishName, fished]) => (
+                        <div className="fish"key={fishName} >
+                            <div className="inside" id={`red${fishName}`}></div>
+                            <div className="inside" id={`blue${fishName}`}></div>
+                            <img className="fishImg" src={`./images/${fishName}.png`} />
                         </div>
                     ))
                 }
@@ -109,6 +111,12 @@ class FishingDisplayJSLessCheckless extends React.Component {
                     z-index:3;
                 }
 
+                .inside{
+                    position:absolute;
+                    height:${fishSize}px;
+                    width:${fishSize}px;
+                }
+
                 .red, .blue{
                     border-radius:100%;
                     overflow:hidden;
@@ -118,14 +126,49 @@ class FishingDisplayJSLessCheckless extends React.Component {
                     
                 .red{
                     background: linear-gradient(${tilt}, ${redcolor} 50%, transparent 50%);
+                    animation: redFadeIn .15s ease both;
                 }
                 .blue{
                     background: linear-gradient(${tilt}, transparent 50%, ${bluecolor} 50%);
-                }
-                .red.blue{
-                    background: linear-gradient(${tilt}, ${redcolor} 50%, ${bluecolor} 50%);
+                    animation: blueFadeIn .15s ease both;
                 }
 
+                @keyframes redFadeIn{
+                    0%{
+                        background: linear-gradient(${tilt}, ${redcolor} 0%, transparent 50%);
+                    }
+                    25%{
+                        background: linear-gradient(${tilt}, ${redcolor} 12%, transparent 50%);
+                    }
+                    50%{
+                        background: linear-gradient(${tilt}, ${redcolor} 23%, transparent 50%);
+                    }
+                    75%{
+                        background: linear-gradient(${tilt}, ${redcolor} 35%, transparent 50%);
+                    }
+                    100%{
+                        background: linear-gradient(${tilt}, ${redcolor} 50%, transparent 50%);
+                    }
+                }
+
+                @keyframes blueFadeIn{
+                    0%{
+                        background: linear-gradient(${tilt}, transparent 50%, ${bluecolor} 100%);
+                    }
+                    25%{
+                        background: linear-gradient(${tilt}, transparent 50%, ${bluecolor} 88%);
+                    }
+                    50%{
+                        background: linear-gradient(${tilt}, transparent 50%, ${bluecolor} 77%);
+                    }
+                    75%{
+                        background: linear-gradient(${tilt}, transparent 50%, ${bluecolor} 65%);
+                    }
+                    100%{
+                        background: linear-gradient(${tilt}, transparent 50%, ${bluecolor} 50%);
+                    }
+                }
+                }
 
             `}
             </style>
