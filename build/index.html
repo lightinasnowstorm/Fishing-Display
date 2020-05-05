@@ -4,8 +4,8 @@
     <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width" />
-        <style id="__jsx-3960952039">
-            .fishBox.jsx-3960952039 {
+        <style id="__jsx-2833117886">
+            .fishBox.jsx-2833117886 {
                 display: -webkit-box;
                 display: -webkit-flex;
                 display: -ms-flexbox;
@@ -27,21 +27,27 @@
                 user-select: none;
             }
 
-            .fish.jsx-3960952039 {
+            .fish.jsx-2833117886 {
                 height: 50px;
                 width: 50px;
                 padding: 2px;
             }
 
-            .fishImg.jsx-3960952039 {
+            .fishImg.jsx-2833117886 {
                 max-width: 100%;
                 max-height: 100%;
                 position: relative;
                 z-index: 3;
             }
 
-            .red.jsx-3960952039,
-            .blue.jsx-3960952039 {
+            .inside.jsx-2833117886 {
+                position: absolute;
+                height: 50px;
+                width: 50px;
+            }
+
+            .red.jsx-2833117886,
+            .blue.jsx-2833117886 {
                 border-radius: 100%;
                 overflow: hidden;
                 -webkit-clip-path: polygon(50% 0%, 93.03% 23.14%, 93.88% 75%, 50% 100%, 7.41% 78.7%, 7.41% 25%);
@@ -50,111 +56,328 @@
                 mask: radial-gradient(white 67%, transparent 69%);
             }
 
-            .red.jsx-3960952039 {
+            .red.jsx-2833117886 {
                 background: linear-gradient(147.75deg, #ff4646 50%, transparent 50%);
+                -webkit-animation: redFadeIn-jsx-2833117886 .15s ease both;
+                animation: redFadeIn-jsx-2833117886 .15s ease both;
             }
 
-            .blue.jsx-3960952039 {
+            .blue.jsx-2833117886 {
                 background: linear-gradient(147.75deg, transparent 50%, #0074d2 50%);
+                -webkit-animation: blueFadeIn-jsx-2833117886 .15s ease both;
+                animation: blueFadeIn-jsx-2833117886 .15s ease both;
             }
 
-            .red.blue.jsx-3960952039 {
-                background: linear-gradient(147.75deg, #ff4646 50%, #0074d2 50%);
+            @-webkit-keyframes redFadeIn-jsx-2833117886 {
+                0% {
+                    background: linear-gradient(147.75deg, #ff4646 0%, transparent 50%);
+                }
+
+                25% {
+                    background: linear-gradient(147.75deg, #ff4646 12%, transparent 50%);
+                }
+
+                50% {
+                    background: linear-gradient(147.75deg, #ff4646 23%, transparent 50%);
+                }
+
+                75% {
+                    background: linear-gradient(147.75deg, #ff4646 35%, transparent 50%);
+                }
+
+                100% {
+                    background: linear-gradient(147.75deg, #ff4646 50%, transparent 50%);
+                }
+            }
+
+            @keyframes redFadeIn-jsx-2833117886 {
+                0% {
+                    background: linear-gradient(147.75deg, #ff4646 0%, transparent 50%);
+                }
+
+                25% {
+                    background: linear-gradient(147.75deg, #ff4646 12%, transparent 50%);
+                }
+
+                50% {
+                    background: linear-gradient(147.75deg, #ff4646 23%, transparent 50%);
+                }
+
+                75% {
+                    background: linear-gradient(147.75deg, #ff4646 35%, transparent 50%);
+                }
+
+                100% {
+                    background: linear-gradient(147.75deg, #ff4646 50%, transparent 50%);
+                }
+            }
+
+            @-webkit-keyframes blueFadeIn-jsx-2833117886 {
+                0% {
+                    background: linear-gradient(147.75deg, transparent 50%, #0074d2 100%);
+                }
+
+                25% {
+                    background: linear-gradient(147.75deg, transparent 50%, #0074d2 88%);
+                }
+
+                50% {
+                    background: linear-gradient(147.75deg, transparent 50%, #0074d2 77%);
+                }
+
+                75% {
+                    background: linear-gradient(147.75deg, transparent 50%, #0074d2 65%);
+                }
+
+                100% {
+                    background: linear-gradient(147.75deg, transparent 50%, #0074d2 50%);
+                }
+            }
+
+            @keyframes blueFadeIn-jsx-2833117886 {
+                0% {
+                    background: linear-gradient(147.75deg, transparent 50%, #0074d2 100%);
+                }
+
+                25% {
+                    background: linear-gradient(147.75deg, transparent 50%, #0074d2 88%);
+                }
+
+                50% {
+                    background: linear-gradient(147.75deg, transparent 50%, #0074d2 77%);
+                }
+
+                75% {
+                    background: linear-gradient(147.75deg, transparent 50%, #0074d2 65%);
+                }
+
+                100% {
+                    background: linear-gradient(147.75deg, transparent 50%, #0074d2 50%);
+                }
             }
         </style>
     </head>
 
     <body>
-        <script src="logic.js" type="module"></script>
+        <script src="race.js" type="module"></script>
         <div id="__next">
-            <div class="jsx-3960952039">
-                <div id="fishBox" class="jsx-3960952039 fishBox">
-                    <div id="MACKEREL_MACHINE" class="jsx-3960952039 fish"><img src="./images/MACKEREL_MACHINE.png"
-                            class="jsx-3960952039 fishImg" /></div>
-                    <div id="COELACANTH_MACHINE" class="jsx-3960952039 fish"><img src="./images/COELACANTH_MACHINE.png"
-                            class="jsx-3960952039 fishImg" /></div>
-                    <div id="BREAM_MACHINE" class="jsx-3960952039 fish"><img src="./images/BREAM_MACHINE.png"
-                            class="jsx-3960952039 fishImg" /></div>
-                    <div id="STARFISH_MACHINE" class="jsx-3960952039 fish"><img src="./images/STARFISH_MACHINE.png"
-                            class="jsx-3960952039 fishImg" /></div>
-                    <div id="SWORDFISH_MACHINE" class="jsx-3960952039 fish"><img src="./images/SWORDFISH_MACHINE.png"
-                            class="jsx-3960952039 fishImg" /></div>
-                    <div id="BLOWFISH_MACHINE" class="jsx-3960952039 fish"><img src="./images/BLOWFISH_MACHINE.png"
-                            class="jsx-3960952039 fishImg" /></div>
-                    <div id="BLOAT_FISH_MACHINE" class="jsx-3960952039 fish"><img src="./images/BLOAT_FISH_MACHINE.png"
-                            class="jsx-3960952039 fishImg" /></div>
-                    <div id="CARP_MACHINE" class="jsx-3960952039 fish"><img src="./images/CARP_MACHINE.png"
-                            class="jsx-3960952039 fishImg" /></div>
-                    <div id="ARAPAIMA_MACHINE" class="jsx-3960952039 fish"><img src="./images/ARAPAIMA_MACHINE.png"
-                            class="jsx-3960952039 fishImg" /></div>
-                    <div id="KOI_CARP_MACHINE" class="jsx-3960952039 fish"><img src="./images/KOI_CARP_MACHINE.png"
-                            class="jsx-3960952039 fishImg" /></div>
-                    <div id="KILLIFISH_MACHINE" class="jsx-3960952039 fish"><img src="./images/KILLIFISH_MACHINE.png"
-                            class="jsx-3960952039 fishImg" /></div>
-                    <div id="BASKING_SHARK" class="jsx-3960952039 fish"><img src="./images/BASKING_SHARK.png"
-                            class="jsx-3960952039 fishImg" /></div>
-                    <div id="BREAM" class="jsx-3960952039 fish"><img src="./images/BREAM.png"
-                            class="jsx-3960952039 fishImg" /></div>
-                    <div id="STARFISH" class="jsx-3960952039 fish"><img src="./images/STARFISH.png"
-                            class="jsx-3960952039 fishImg" /></div>
-                    <div id="BEETLE_FISH" class="jsx-3960952039 fish"><img src="./images/BEETLE_FISH.png"
-                            class="jsx-3960952039 fishImg" /></div>
-                    <div id="HORSESHOE_CRAB" class="jsx-3960952039 fish"><img src="./images/HORSESHOE_CRAB.png"
-                            class="jsx-3960952039 fishImg" /></div>
-                    <div id="MACKEREL" class="jsx-3960952039 fish"><img src="./images/MACKEREL.png"
-                            class="jsx-3960952039 fishImg" /></div>
-                    <div id="SWORDFISH" class="jsx-3960952039 fish"><img src="./images/SWORDFISH.png"
-                            class="jsx-3960952039 fishImg" /></div>
-                    <div id="BLOWFISH" class="jsx-3960952039 fish"><img src="./images/BLOWFISH.png"
-                            class="jsx-3960952039 fishImg" /></div>
-                    <div id="COELACANTH" class="jsx-3960952039 fish"><img src="./images/COELACANTH.png"
-                            class="jsx-3960952039 fishImg" /></div>
-                    <div id="TWOFACE" class="jsx-3960952039 fish"><img src="./images/TWOFACE.png"
-                            class="jsx-3960952039 fishImg" /></div>
-                    <div id="WATER_FLEA" class="jsx-3960952039 fish"><img src="./images/WATER_FLEA.png"
-                            class="jsx-3960952039 fishImg" /></div>
-                    <div id="OIL_SARDINE" class="jsx-3960952039 fish"><img src="./images/OIL_SARDINE.png"
-                            class="jsx-3960952039 fishImg" /></div>
-                    <div id="ARAPAIMA" class="jsx-3960952039 fish"><img src="./images/ARAPAIMA.png"
-                            class="jsx-3960952039 fishImg" /></div>
-                    <div id="FRESHWATER_RAY" class="jsx-3960952039 fish"><img src="./images/FRESHWATER_RAY.png"
-                            class="jsx-3960952039 fishImg" /></div>
-                    <div id="FUR_CARP" class="jsx-3960952039 fish"><img src="./images/FUR_CARP.png"
-                            class="jsx-3960952039 fishImg" /></div>
-                    <div id="KOI_CARP" class="jsx-3960952039 fish"><img src="./images/KOI_CARP.png"
-                            class="jsx-3960952039 fishImg" /></div>
-                    <div id="BLOAT_FISH" class="jsx-3960952039 fish"><img src="./images/BLOAT_FISH.png"
-                            class="jsx-3960952039 fishImg" /></div>
-                    <div id="CARP" class="jsx-3960952039 fish"><img src="./images/CARP.png"
-                            class="jsx-3960952039 fishImg" /></div>
-                    <div id="KILLIFISH" class="jsx-3960952039 fish"><img src="./images/KILLIFISH.png"
-                            class="jsx-3960952039 fishImg" /></div>
-                    <div id="TWINFISH" class="jsx-3960952039 fish"><img src="./images/TWINFISH.png"
-                            class="jsx-3960952039 fishImg" /></div>
-                    <div id="AROWANA" class="jsx-3960952039 fish"><img src="./images/AROWANA.png"
-                            class="jsx-3960952039 fishImg" /></div>
-                    <div id="IRON_PIPE" class="jsx-3960952039 fish"><img src="./images/IRON_PIPE.png"
-                            class="jsx-3960952039 fishImg" /></div>
-                    <div id="POD_B" class="jsx-3960952039 fish"><img src="./images/POD_B.png"
-                            class="jsx-3960952039 fishImg" /></div>
-                    <div id="BROKEN_FIREARM" class="jsx-3960952039 fish"><img src="./images/BROKEN_FIREARM.png"
-                            class="jsx-3960952039 fishImg" /></div>
-                    <div id="BATTERY" class="jsx-3960952039 fish"><img src="./images/BATTERY.png"
-                            class="jsx-3960952039 fishImg" /></div>
-                    <div id="GAS_CYLINDER" class="jsx-3960952039 fish"><img src="./images/GAS_CYLINDER.png"
-                            class="jsx-3960952039 fishImg" /></div>
-                    <div id="TIRE" class="jsx-3960952039 fish"><img src="./images/TIRE.png"
-                            class="jsx-3960952039 fishImg" /></div>
-                    <div id="MACHINE_LIFEFORM_HEAD" class="jsx-3960952039 fish"><img
-                            src="./images/MACHINE_LIFEFORM_HEAD.png" class="jsx-3960952039 fishImg" /></div>
-                    <div id="FRESHWATER_RAY_MACHINE" class="jsx-3960952039 fish"><img
-                            src="./images/FRESHWATER_RAY_MACHINE.png" class="jsx-3960952039 fishImg" /></div>
-                    <div id="BASKING_SHARK_MACHINE" class="jsx-3960952039 fish"><img
-                            src="./images/BASKING_SHARK_MACHINE.png" class="jsx-3960952039 fishImg" /></div>
-                    <div id="AROWANA_MACHINE" class="jsx-3960952039 fish"><img src="./images/AROWANA_MACHINE.png"
-                            class="jsx-3960952039 fishImg" /></div>
-                    <div id="HORSESHOE_CRAB_MACHINE" class="jsx-3960952039 fish"><img
-                            src="./images/HORSESHOE_CRAB_MACHINE.png" class="jsx-3960952039 fishImg" /></div>
+            <div class="jsx-2833117886">
+                <div id="fishBox" class="jsx-2833117886 fishBox">
+                    <div class="jsx-2833117886 fish">
+                        <div id="redMACKEREL_MACHINE" class="jsx-2833117886 inside"></div>
+                        <div id="blueMACKEREL_MACHINE" class="jsx-2833117886 inside"></div><img
+                            src="./images/MACKEREL_MACHINE.png" class="jsx-2833117886 fishImg" />
+                    </div>
+                    <div class="jsx-2833117886 fish">
+                        <div id="redCOELACANTH_MACHINE" class="jsx-2833117886 inside"></div>
+                        <div id="blueCOELACANTH_MACHINE" class="jsx-2833117886 inside"></div><img
+                            src="./images/COELACANTH_MACHINE.png" class="jsx-2833117886 fishImg" />
+                    </div>
+                    <div class="jsx-2833117886 fish">
+                        <div id="redBREAM_MACHINE" class="jsx-2833117886 inside"></div>
+                        <div id="blueBREAM_MACHINE" class="jsx-2833117886 inside"></div><img
+                            src="./images/BREAM_MACHINE.png" class="jsx-2833117886 fishImg" />
+                    </div>
+                    <div class="jsx-2833117886 fish">
+                        <div id="redSTARFISH_MACHINE" class="jsx-2833117886 inside"></div>
+                        <div id="blueSTARFISH_MACHINE" class="jsx-2833117886 inside"></div><img
+                            src="./images/STARFISH_MACHINE.png" class="jsx-2833117886 fishImg" />
+                    </div>
+                    <div class="jsx-2833117886 fish">
+                        <div id="redSWORDFISH_MACHINE" class="jsx-2833117886 inside"></div>
+                        <div id="blueSWORDFISH_MACHINE" class="jsx-2833117886 inside"></div><img
+                            src="./images/SWORDFISH_MACHINE.png" class="jsx-2833117886 fishImg" />
+                    </div>
+                    <div class="jsx-2833117886 fish">
+                        <div id="redBLOWFISH_MACHINE" class="jsx-2833117886 inside"></div>
+                        <div id="blueBLOWFISH_MACHINE" class="jsx-2833117886 inside"></div><img
+                            src="./images/BLOWFISH_MACHINE.png" class="jsx-2833117886 fishImg" />
+                    </div>
+                    <div class="jsx-2833117886 fish">
+                        <div id="redBLOAT_FISH_MACHINE" class="jsx-2833117886 inside"></div>
+                        <div id="blueBLOAT_FISH_MACHINE" class="jsx-2833117886 inside"></div><img
+                            src="./images/BLOAT_FISH_MACHINE.png" class="jsx-2833117886 fishImg" />
+                    </div>
+                    <div class="jsx-2833117886 fish">
+                        <div id="redCARP_MACHINE" class="jsx-2833117886 inside"></div>
+                        <div id="blueCARP_MACHINE" class="jsx-2833117886 inside"></div><img
+                            src="./images/CARP_MACHINE.png" class="jsx-2833117886 fishImg" />
+                    </div>
+                    <div class="jsx-2833117886 fish">
+                        <div id="redARAPAIMA_MACHINE" class="jsx-2833117886 inside"></div>
+                        <div id="blueARAPAIMA_MACHINE" class="jsx-2833117886 inside"></div><img
+                            src="./images/ARAPAIMA_MACHINE.png" class="jsx-2833117886 fishImg" />
+                    </div>
+                    <div class="jsx-2833117886 fish">
+                        <div id="redKOI_CARP_MACHINE" class="jsx-2833117886 inside"></div>
+                        <div id="blueKOI_CARP_MACHINE" class="jsx-2833117886 inside"></div><img
+                            src="./images/KOI_CARP_MACHINE.png" class="jsx-2833117886 fishImg" />
+                    </div>
+                    <div class="jsx-2833117886 fish">
+                        <div id="redKILLIFISH_MACHINE" class="jsx-2833117886 inside"></div>
+                        <div id="blueKILLIFISH_MACHINE" class="jsx-2833117886 inside"></div><img
+                            src="./images/KILLIFISH_MACHINE.png" class="jsx-2833117886 fishImg" />
+                    </div>
+                    <div class="jsx-2833117886 fish">
+                        <div id="redBASKING_SHARK" class="jsx-2833117886 inside"></div>
+                        <div id="blueBASKING_SHARK" class="jsx-2833117886 inside"></div><img
+                            src="./images/BASKING_SHARK.png" class="jsx-2833117886 fishImg" />
+                    </div>
+                    <div class="jsx-2833117886 fish">
+                        <div id="redBREAM" class="jsx-2833117886 inside"></div>
+                        <div id="blueBREAM" class="jsx-2833117886 inside"></div><img src="./images/BREAM.png"
+                            class="jsx-2833117886 fishImg" />
+                    </div>
+                    <div class="jsx-2833117886 fish">
+                        <div id="redSTARFISH" class="jsx-2833117886 inside"></div>
+                        <div id="blueSTARFISH" class="jsx-2833117886 inside"></div><img src="./images/STARFISH.png"
+                            class="jsx-2833117886 fishImg" />
+                    </div>
+                    <div class="jsx-2833117886 fish">
+                        <div id="redBEETLE_FISH" class="jsx-2833117886 inside"></div>
+                        <div id="blueBEETLE_FISH" class="jsx-2833117886 inside"></div><img
+                            src="./images/BEETLE_FISH.png" class="jsx-2833117886 fishImg" />
+                    </div>
+                    <div class="jsx-2833117886 fish">
+                        <div id="redHORSESHOE_CRAB" class="jsx-2833117886 inside"></div>
+                        <div id="blueHORSESHOE_CRAB" class="jsx-2833117886 inside"></div><img
+                            src="./images/HORSESHOE_CRAB.png" class="jsx-2833117886 fishImg" />
+                    </div>
+                    <div class="jsx-2833117886 fish">
+                        <div id="redMACKEREL" class="jsx-2833117886 inside"></div>
+                        <div id="blueMACKEREL" class="jsx-2833117886 inside"></div><img src="./images/MACKEREL.png"
+                            class="jsx-2833117886 fishImg" />
+                    </div>
+                    <div class="jsx-2833117886 fish">
+                        <div id="redSWORDFISH" class="jsx-2833117886 inside"></div>
+                        <div id="blueSWORDFISH" class="jsx-2833117886 inside"></div><img src="./images/SWORDFISH.png"
+                            class="jsx-2833117886 fishImg" />
+                    </div>
+                    <div class="jsx-2833117886 fish">
+                        <div id="redBLOWFISH" class="jsx-2833117886 inside"></div>
+                        <div id="blueBLOWFISH" class="jsx-2833117886 inside"></div><img src="./images/BLOWFISH.png"
+                            class="jsx-2833117886 fishImg" />
+                    </div>
+                    <div class="jsx-2833117886 fish">
+                        <div id="redCOELACANTH" class="jsx-2833117886 inside"></div>
+                        <div id="blueCOELACANTH" class="jsx-2833117886 inside"></div><img src="./images/COELACANTH.png"
+                            class="jsx-2833117886 fishImg" />
+                    </div>
+                    <div class="jsx-2833117886 fish">
+                        <div id="redTWOFACE" class="jsx-2833117886 inside"></div>
+                        <div id="blueTWOFACE" class="jsx-2833117886 inside"></div><img src="./images/TWOFACE.png"
+                            class="jsx-2833117886 fishImg" />
+                    </div>
+                    <div class="jsx-2833117886 fish">
+                        <div id="redWATER_FLEA" class="jsx-2833117886 inside"></div>
+                        <div id="blueWATER_FLEA" class="jsx-2833117886 inside"></div><img src="./images/WATER_FLEA.png"
+                            class="jsx-2833117886 fishImg" />
+                    </div>
+                    <div class="jsx-2833117886 fish">
+                        <div id="redOIL_SARDINE" class="jsx-2833117886 inside"></div>
+                        <div id="blueOIL_SARDINE" class="jsx-2833117886 inside"></div><img
+                            src="./images/OIL_SARDINE.png" class="jsx-2833117886 fishImg" />
+                    </div>
+                    <div class="jsx-2833117886 fish">
+                        <div id="redARAPAIMA" class="jsx-2833117886 inside"></div>
+                        <div id="blueARAPAIMA" class="jsx-2833117886 inside"></div><img src="./images/ARAPAIMA.png"
+                            class="jsx-2833117886 fishImg" />
+                    </div>
+                    <div class="jsx-2833117886 fish">
+                        <div id="redFRESHWATER_RAY" class="jsx-2833117886 inside"></div>
+                        <div id="blueFRESHWATER_RAY" class="jsx-2833117886 inside"></div><img
+                            src="./images/FRESHWATER_RAY.png" class="jsx-2833117886 fishImg" />
+                    </div>
+                    <div class="jsx-2833117886 fish">
+                        <div id="redFUR_CARP" class="jsx-2833117886 inside"></div>
+                        <div id="blueFUR_CARP" class="jsx-2833117886 inside"></div><img src="./images/FUR_CARP.png"
+                            class="jsx-2833117886 fishImg" />
+                    </div>
+                    <div class="jsx-2833117886 fish">
+                        <div id="redKOI_CARP" class="jsx-2833117886 inside"></div>
+                        <div id="blueKOI_CARP" class="jsx-2833117886 inside"></div><img src="./images/KOI_CARP.png"
+                            class="jsx-2833117886 fishImg" />
+                    </div>
+                    <div class="jsx-2833117886 fish">
+                        <div id="redBLOAT_FISH" class="jsx-2833117886 inside"></div>
+                        <div id="blueBLOAT_FISH" class="jsx-2833117886 inside"></div><img src="./images/BLOAT_FISH.png"
+                            class="jsx-2833117886 fishImg" />
+                    </div>
+                    <div class="jsx-2833117886 fish">
+                        <div id="redCARP" class="jsx-2833117886 inside"></div>
+                        <div id="blueCARP" class="jsx-2833117886 inside"></div><img src="./images/CARP.png"
+                            class="jsx-2833117886 fishImg" />
+                    </div>
+                    <div class="jsx-2833117886 fish">
+                        <div id="redKILLIFISH" class="jsx-2833117886 inside"></div>
+                        <div id="blueKILLIFISH" class="jsx-2833117886 inside"></div><img src="./images/KILLIFISH.png"
+                            class="jsx-2833117886 fishImg" />
+                    </div>
+                    <div class="jsx-2833117886 fish">
+                        <div id="redTWINFISH" class="jsx-2833117886 inside"></div>
+                        <div id="blueTWINFISH" class="jsx-2833117886 inside"></div><img src="./images/TWINFISH.png"
+                            class="jsx-2833117886 fishImg" />
+                    </div>
+                    <div class="jsx-2833117886 fish">
+                        <div id="redAROWANA" class="jsx-2833117886 inside"></div>
+                        <div id="blueAROWANA" class="jsx-2833117886 inside"></div><img src="./images/AROWANA.png"
+                            class="jsx-2833117886 fishImg" />
+                    </div>
+                    <div class="jsx-2833117886 fish">
+                        <div id="redIRON_PIPE" class="jsx-2833117886 inside"></div>
+                        <div id="blueIRON_PIPE" class="jsx-2833117886 inside"></div><img src="./images/IRON_PIPE.png"
+                            class="jsx-2833117886 fishImg" />
+                    </div>
+                    <div class="jsx-2833117886 fish">
+                        <div id="redPOD_B" class="jsx-2833117886 inside"></div>
+                        <div id="bluePOD_B" class="jsx-2833117886 inside"></div><img src="./images/POD_B.png"
+                            class="jsx-2833117886 fishImg" />
+                    </div>
+                    <div class="jsx-2833117886 fish">
+                        <div id="redBROKEN_FIREARM" class="jsx-2833117886 inside"></div>
+                        <div id="blueBROKEN_FIREARM" class="jsx-2833117886 inside"></div><img
+                            src="./images/BROKEN_FIREARM.png" class="jsx-2833117886 fishImg" />
+                    </div>
+                    <div class="jsx-2833117886 fish">
+                        <div id="redBATTERY" class="jsx-2833117886 inside"></div>
+                        <div id="blueBATTERY" class="jsx-2833117886 inside"></div><img src="./images/BATTERY.png"
+                            class="jsx-2833117886 fishImg" />
+                    </div>
+                    <div class="jsx-2833117886 fish">
+                        <div id="redGAS_CYLINDER" class="jsx-2833117886 inside"></div>
+                        <div id="blueGAS_CYLINDER" class="jsx-2833117886 inside"></div><img
+                            src="./images/GAS_CYLINDER.png" class="jsx-2833117886 fishImg" />
+                    </div>
+                    <div class="jsx-2833117886 fish">
+                        <div id="redTIRE" class="jsx-2833117886 inside"></div>
+                        <div id="blueTIRE" class="jsx-2833117886 inside"></div><img src="./images/TIRE.png"
+                            class="jsx-2833117886 fishImg" />
+                    </div>
+                    <div class="jsx-2833117886 fish">
+                        <div id="redMACHINE_LIFEFORM_HEAD" class="jsx-2833117886 inside"></div>
+                        <div id="blueMACHINE_LIFEFORM_HEAD" class="jsx-2833117886 inside"></div><img
+                            src="./images/MACHINE_LIFEFORM_HEAD.png" class="jsx-2833117886 fishImg" />
+                    </div>
+                    <div class="jsx-2833117886 fish">
+                        <div id="redFRESHWATER_RAY_MACHINE" class="jsx-2833117886 inside"></div>
+                        <div id="blueFRESHWATER_RAY_MACHINE" class="jsx-2833117886 inside"></div><img
+                            src="./images/FRESHWATER_RAY_MACHINE.png" class="jsx-2833117886 fishImg" />
+                    </div>
+                    <div class="jsx-2833117886 fish">
+                        <div id="redBASKING_SHARK_MACHINE" class="jsx-2833117886 inside"></div>
+                        <div id="blueBASKING_SHARK_MACHINE" class="jsx-2833117886 inside"></div><img
+                            src="./images/BASKING_SHARK_MACHINE.png" class="jsx-2833117886 fishImg" />
+                    </div>
+                    <div class="jsx-2833117886 fish">
+                        <div id="redAROWANA_MACHINE" class="jsx-2833117886 inside"></div>
+                        <div id="blueAROWANA_MACHINE" class="jsx-2833117886 inside"></div><img
+                            src="./images/AROWANA_MACHINE.png" class="jsx-2833117886 fishImg" />
+                    </div>
+                    <div class="jsx-2833117886 fish">
+                        <div id="redHORSESHOE_CRAB_MACHINE" class="jsx-2833117886 inside"></div>
+                        <div id="blueHORSESHOE_CRAB_MACHINE" class="jsx-2833117886 inside"></div><img
+                            src="./images/HORSESHOE_CRAB_MACHINE.png" class="jsx-2833117886 fishImg" />
+                    </div>
                 </div>
             </div>
         </div>
