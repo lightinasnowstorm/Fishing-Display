@@ -1,2 +1,2 @@
-import FishingDisplayJSLessCheckless from '../components/fishingdisplay_jsless_checkless'
-export default () => <FishingDisplayJSLessCheckless />
+import FishingDisplayJSLessCheckless3Teams from '../components/fishingdisplay_jsless_checkless_3teams'
+export default () => <FishingDisplayJSLessCheckless3Teams />
