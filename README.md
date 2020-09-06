@@ -30,4 +30,4 @@ run `npx next export -o ./build/` to output to the build directory
 
 manually remove the script files from the export
 
-then add in the line `<script src="logic.js" type="module"></script>` at the start of `<body>` to connect it to @rodg's logic
+then add in the line `<script src="race.js" type="module"></script>` at the start of `<body>` to connect it to @rodg's logic
