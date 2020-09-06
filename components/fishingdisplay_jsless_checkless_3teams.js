@@ -133,7 +133,7 @@ class FishingDisplayJSLessCheckless3Teams extends React.Component {
                 .red{
                     background: ${redcolor};
                     animation: redFadeIn ${transitionTime} ease both;
-                    clip-path: polygon(50% 100%, 7.41% 78.7%, 7.41% 25%, 50% 50%);
+                    clip-path: polygon(7.41% 25%, 50% 0%, 93.03% 23.14%, 50% 50%);
                 }
                 .blue{
                     background: ${bluecolor};
@@ -143,7 +143,7 @@ class FishingDisplayJSLessCheckless3Teams extends React.Component {
                 .green{
                     background: ${greencolor};
                     animation: greenFadeIn ${transitionTime} ease both;
-                    clip-path: polygon(7.41% 25%, 50% 0%, 93.03% 23.14%, 50% 50%);
+                    clip-path: polygon(50% 100%, 7.41% 78.7%, 7.41% 25%, 50% 50%);
                 }
 
                 @keyframes redFadeIn{
