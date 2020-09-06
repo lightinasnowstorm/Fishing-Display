@@ -70,9 +70,9 @@ class FishingDisplayJSLessCheckless3Teams extends React.Component {
         const greencolor = '#32cd32'
         const toumei = "transparent"
         const transitionTime='.15s'
-        const tiltred = "240deg"
+        const tiltred = "0deg"
         const tiltblue="120deg"
-        const tiltgreen="0deg"
+        const tiltgreen="240deg"
 
 
         return (<div>
