@@ -66,8 +66,8 @@ class FishingDisplayJSLessCheckless3Teams extends React.Component {
         const fishPadding = 2
 
         const redcolor = '#ff4646'//'#ff8e22'
-        const bluecolor = '#0074d2'//'#903bff'
-        const greencolor = 'limegreen'
+        const bluecolor = '#E8DE2A'//'#903bff'
+        const greencolor = '#32cd32'
         const toumei = "transparent"
         const transitionTime='.15s'
         const tiltred = "240deg"
@@ -81,9 +81,9 @@ class FishingDisplayJSLessCheckless3Teams extends React.Component {
                 {
                     fish.map(([fishName, fished]) => (
                         <div className="fish" key={fishName} >
-                            <div className="inside red" id={`red${fishName}`}></div>
-                            <div className="inside blue" id={`blue${fishName}`}></div>
-                            <div className="inside green" id={`green${fishName}`}></div>
+                            <div className="inside" id={`red${fishName}`}></div>
+                            <div className="inside" id={`blue${fishName}`}></div>
+                            <div className="inside" id={`green${fishName}`}></div>
                             <img className="fishImg" src={`./images/${fishName}.png`} />
                         </div>
                     ))
